@@ -12,7 +12,6 @@ Welcome to the **Pension Advisor Chatbot** – a conversational AI built with Py
 - [Usage](#usage)
 - [Training the Model](#training-the-model)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
