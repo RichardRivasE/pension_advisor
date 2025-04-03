@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat with the Bot</title>
+  <!-- Link to your external CSS (served by Flask's static folder) -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <!-- jQuery for AJAX requests -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Main container for the chat interface -->
+  <div class="chat-container">
+    <div class="chat-header">
+      <h1>Pension Plan Advisor</h1>
+    </div>
+
+    <!-- Chat area -->
+    <div id="chat-box"></div>
+
+    <!-- Input section -->
+    <div class="input-container">
+      <input type="text" id="message-input" placeholder="Type your message here..." />
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+
+  <!-- JavaScript to handle message sending and displaying responses -->
+  <script>
+    $(document).ready(function(){
+      // Send message on button click
+      $('#send-btn').click(function(){
+        var message = $('#message-input').val().trim();
+        if(message !== ""){
+          // Display user message
+          $('#chat-box').append(
+            '<div class="message user-message">' + 
+              '<strong>You:</strong> ' + message + 
+            '</div>'
+          );
+          // AJAX POST to the Flask route
+          $.post('/chat', { message: message }, function(data){
+            // Display bot response
+            $('#chat-box').append(
+              '<div class="message bot-message">' + 
+                '<strong>Bot:</strong> ' + data.response + 
+              '</div>'
+            );
+            // Clear input
+            $('#message-input').val('');
+            // Auto-scroll to bottom
+            $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight);
+          });
+        }
+      });
+
+      // Send message on "Enter" key press
+      $('#message-input').keypress(function(e){
+        if(e.which == 13){
+          $('#send-btn').click();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

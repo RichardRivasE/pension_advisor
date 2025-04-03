@@ -1,0 +1,206 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Hey", "What's up", "Good day", "Is anyone here?", "Greetings"],
+        "responses": ["Hi there! Ready to learn about investing?", "Hello! How can I assist you with your investments today?", "Hey! Let's talk money."]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Goodbye", "Bye", "See you later", "Talk to you soon", "I have to go", "Catch you later"],
+        "responses": ["Goodbye! Remember to diversify!", "Take care and stay financially savvy!", "See you soon, investor!"]
+      },
+      {
+        "tag": "investing_basics",
+        "patterns": ["What is investing?", "Explain investing", "Tell me about investment", "What does investing mean?"],
+        "responses": ["Investing is the act of allocating resources, usually money, with the expectation of generating income or profit."]
+      },
+      {
+        "tag": "stock_market",
+        "patterns": ["What is the stock market?", "How does the stock market work?", "Explain the stock market"],
+        "responses": ["The stock market is a marketplace where shares of publicly held companies are bought and sold."]
+      },
+      {
+        "tag": "stock_vs_bond",
+        "patterns": ["Difference between stocks and bonds", "Stocks vs bonds", "Are stocks better than bonds?", "What are bonds?"],
+        "responses": ["Stocks represent ownership in a company, while bonds are loans made to a company or government with interest returns."]
+      },
+      {
+        "tag": "etf",
+        "patterns": ["What is an ETF?", "Tell me about ETFs", "Are ETFs good investments?", "ETF meaning"],
+        "responses": ["ETFs (Exchange-Traded Funds) are investment funds traded on stock exchanges, holding assets like stocks or bonds."]
+      },
+      {
+        "tag": "mutual_fund",
+        "patterns": ["What is a mutual fund?", "Mutual funds explained", "Is a mutual fund a good investment?"],
+        "responses": ["A mutual fund pools money from many investors to invest in a diversified portfolio of securities."]
+      },
+      {
+        "tag": "diversification",
+        "patterns": ["What is diversification?", "Why should I diversify?", "Diversification in investing"],
+        "responses": ["Diversification involves spreading investments across various assets to reduce risk."]
+      },
+      {
+        "tag": "risk_tolerance",
+        "patterns": ["What is risk tolerance?", "How do I know my risk level?", "Explain risk tolerance"],
+        "responses": ["Risk tolerance is your ability and willingness to endure losses in your investments. It depends on your goals, income, and personality."]
+      },
+      {
+        "tag": "portfolio_allocation",
+        "patterns": ["How should I allocate my portfolio?", "Portfolio allocation advice", "Best asset allocation strategy"],
+        "responses": ["Asset allocation depends on your investment goals and risk profile. A typical portfolio includes a mix of stocks, bonds, and cash."]
+      },
+      {
+        "tag": "dividends",
+        "patterns": ["What are dividends?", "How do dividends work?", "Dividend investing"],
+        "responses": ["Dividends are payments made by companies to shareholders from their profits. Dividend investing focuses on generating regular income."]
+      },
+      {
+        "tag": "compound_interest",
+        "patterns": ["What is compound interest?", "How does compound interest work?", "Explain compounding"],
+        "responses": ["Compound interest means earning interest on both your initial investment and the interest previously earned. It’s a powerful growth tool."]
+      },
+      {
+        "tag": "index_funds",
+        "patterns": ["What is an index fund?", "Index fund explained", "Are index funds safe?"],
+        "responses": ["Index funds track a market index like the S&P 500. They're known for low fees and broad diversification."]
+      },
+      {
+        "tag": "crypto_investing",
+        "patterns": ["Should I invest in crypto?", "Is crypto a good investment?", "Tell me about Bitcoin", "Cryptocurrency investment advice"],
+        "responses": ["Cryptocurrency can offer high returns but also carries high volatility. Do your research and only invest what you can afford to lose."]
+      },
+      {
+        "tag": "real_estate",
+        "patterns": ["Is real estate a good investment?", "Investing in property", "Tell me about real estate investing"],
+        "responses": ["Real estate can generate income and appreciate in value. It requires upfront capital but offers tax benefits and portfolio diversification."]
+      },
+      {
+        "tag": "inflation_hedge",
+        "patterns": ["How to hedge against inflation?", "Best assets during inflation", "Investing during inflation"],
+        "responses": ["Assets like real estate, commodities, and TIPS are often used to hedge against inflation."]
+      },
+      {
+        "tag": "recession_investing",
+        "patterns": ["How to invest during a recession?", "Best recession-proof investments", "Safe assets during downturns"],
+        "responses": ["During a recession, investors often favor defensive stocks, bonds, and gold. Diversification is key."]
+      },
+      {
+        "tag": "technical_vs_fundamental",
+        "patterns": ["What is fundamental analysis?", "What is technical analysis?", "Difference between technical and fundamental analysis"],
+        "responses": ["Fundamental analysis evaluates a company's financials and outlook. Technical analysis studies price and volume charts."]
+      },
+      {
+        "tag": "retirement",
+        "patterns": ["How to invest for retirement?", "Best retirement plans", "What is a 401k?", "IRA vs Roth IRA"],
+        "responses": ["Planning for retirement involves investing in tax-advantaged accounts like 401(k), IRA, or Roth IRA. Start early to benefit from compounding."]
+      },
+      {
+        "tag": "financial_goals",
+        "patterns": ["How to set financial goals?", "Long-term financial planning", "Saving vs investing"],
+        "responses": ["Set SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound). Investing helps you grow wealth for long-term goals."]
+      },
+      {
+        "tag": "emergency_fund",
+        "patterns": ["Do I need an emergency fund?", "How much should I save for emergencies?", "Emergency fund vs investing"],
+        "responses": ["Yes! An emergency fund covers 3–6 months of expenses and helps you avoid pulling from investments during a crisis."]
+      },
+      {
+        "tag": "resources",
+        "patterns": ["Where can I learn about investing?", "Best investing books", "Recommend investment resources"],
+        "responses": ["Check out *The Intelligent Investor*, *Rich Dad Poor Dad*, and websites like Investopedia and Morningstar."]
+      },
+      {
+        "tag": "pension_intro",
+        "patterns": ["What is a pension?", "Tell me about pensions", "How do pensions work?", "Explain pension finance"],
+        "responses": ["A pension is a retirement plan that provides monthly income in retirement, typically sponsored by employers or the government."]
+      },
+      {
+        "tag": "defined_benefit",
+        "patterns": ["What is a defined benefit plan?", "Explain defined benefit pension", "DB pension meaning"],
+        "responses": ["A defined benefit plan guarantees a specific retirement benefit amount, often based on salary and years of service."]
+      },
+      {
+        "tag": "defined_contribution",
+        "patterns": ["What is a defined contribution plan?", "DC pension meaning", "Defined contribution vs defined benefit"],
+        "responses": ["A defined contribution plan, like a 401(k), involves you and your employer contributing to an individual account for retirement."]
+      },
+      {
+        "tag": "public_vs_private_pension",
+        "patterns": ["Difference between public and private pensions", "Public pension vs private pension"],
+        "responses": ["Public pensions are government-sponsored plans, while private pensions are employer-sponsored or individually managed plans."]
+      },
+      {
+        "tag": "pension_portability",
+        "patterns": ["Can I transfer my pension?", "Is my pension portable?", "What happens to my pension if I change jobs?"],
+        "responses": ["Pension portability depends on the plan. Defined contribution plans are usually portable; defined benefit plans may have restrictions."]
+      },
+      {
+        "tag": "pension_investment",
+        "patterns": ["How are pension funds invested?", "Where does pension money go?", "Pension investment strategy"],
+        "responses": ["Pension funds are typically invested in a diversified portfolio of stocks, bonds, and other assets to meet long-term liabilities."]
+      },
+      {
+        "tag": "pension_vs_401k",
+        "patterns": ["Difference between pension and 401(k)", "Pension or 401(k)?", "Which is better: pension or 401k?"],
+        "responses": ["Pensions guarantee income in retirement, while 401(k)s depend on market performance and personal contributions."]
+      },
+      {
+        "tag": "retirement_income",
+        "patterns": ["How much do I need to retire?", "How much will my pension pay?", "Retirement income planning"],
+        "responses": ["Estimate retirement income based on pension benefits, 401(k)/IRA savings, Social Security, and personal investments."]
+      },
+      {
+        "tag": "pension_funding_status",
+        "patterns": ["What is pension funding status?", "Is my pension underfunded?", "Underfunded pension meaning"],
+        "responses": ["Pension funding status refers to whether a plan has enough assets to cover future liabilities. Underfunded plans may be at risk."]
+      },
+      {
+        "tag": "early_retirement_penalty",
+        "patterns": ["Is there a penalty for early retirement?", "What happens if I retire early?", "Pension early withdrawal rules"],
+        "responses": ["Early retirement may reduce your pension benefit and could incur penalties, depending on the plan and your age."]
+      },
+      {
+        "tag": "social_security",
+        "patterns": ["What is Social Security?", "How does Social Security work?", "Can I rely on Social Security?"],
+        "responses": ["Social Security is a U.S. government program that provides retirement, disability, and survivor benefits based on your work history."]
+      },
+      {
+        "tag": "annuity_pensions",
+        "patterns": ["What is a pension annuity?", "Should I buy an annuity?", "Annuity vs lump sum pension"],
+        "responses": ["A pension annuity converts your pension savings into a guaranteed income stream. It’s a way to manage longevity risk."]
+      },
+      {
+        "tag": "pension_calculators",
+        "patterns": ["How do I calculate my pension?", "Pension calculator", "Estimate my pension income"],
+        "responses": ["You can estimate your pension using online calculators or by reviewing your plan’s benefit formula and service years."]
+      },
+      {
+        "tag": "pension_risk",
+        "patterns": ["What are the risks in pension finance?", "Pension plan risks", "Can I lose my pension?"],
+        "responses": ["Pension risks include underfunding, inflation erosion, longevity risk, and changes in government or employer policies."]
+      },
+      {
+        "tag": "retirement_age",
+        "patterns": ["When should I retire?", "What’s the best retirement age?", "Ideal retirement age"],
+        "responses": ["The best retirement age depends on your financial goals, pension eligibility, health, and lifestyle expectations."]
+      },
+      {
+        "tag": "international_pension",
+        "patterns": ["Can I receive a pension abroad?", "International pensions", "Retiring overseas with a pension"],
+        "responses": ["Some pensions allow international payouts. Check with your provider or government agency for country-specific rules."]
+      },
+      {
+        "tag": "pension_taxation",
+        "patterns": ["Are pensions taxed?", "Pension tax rules", "Do I pay tax on retirement income?"],
+        "responses": ["Yes, many pensions are taxed as ordinary income. Roth accounts and certain jurisdictions may offer tax advantages."]
+      },
+      {
+        "tag": "pension_reform",
+        "patterns": ["What is pension reform?", "Will pensions change?", "Recent pension law changes"],
+        "responses": ["Pension reform refers to policy changes aimed at improving pension sustainability. Stay informed through government updates."]
+      }
+    
+    ]
+  }
+  
